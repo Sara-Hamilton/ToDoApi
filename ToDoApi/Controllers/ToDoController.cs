@@ -7,7 +7,7 @@ using ToDoApi.Models;
 
 namespace ToDoApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/todo")]
     [ApiController]
     public class ToDoController : Controller
     {
@@ -24,6 +24,25 @@ namespace ToDoApi.Controllers
                 _context.ToDoItems.Add(new ToDoItem { Name = "Item1" });
                 _context.SaveChanges();
             }
+        }
+
+        // implement GET /api/todo
+        [HttpGet]
+        public ActionResult<List<ToDoItem>> GetAll()
+        {
+            return _context.ToDoItems.ToList();
+        }
+
+        // implement GET /api/todo/{id}
+        [HttpGet("{id}", Name = "GetToDo")]
+        public ActionResult<ToDoItem> GetById(long id)
+        {
+            var item = _context.ToDoItems.Find(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return item;
         }
      }
 }
