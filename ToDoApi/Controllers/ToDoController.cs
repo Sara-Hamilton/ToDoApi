@@ -71,5 +71,19 @@ namespace ToDoApi.Controllers
             return NoContent();
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            var toDo = _context.ToDoItems.Find(id);
+            if (toDo == null)
+            {
+                return NotFound();
+            }
+
+            _context.ToDoItems.Remove(toDo);
+            _context.SaveChanges();
+            return NoContent();
+        }
+
      }
 }
