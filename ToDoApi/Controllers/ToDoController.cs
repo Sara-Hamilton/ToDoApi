@@ -45,6 +45,7 @@ namespace ToDoApi.Controllers
             return item;
         }
 
+        // implement POST /api/todo
         [HttpPost]
         public IActionResult Create(ToDoItem item)
         {
@@ -54,6 +55,7 @@ namespace ToDoApi.Controllers
             return CreatedAtRoute("GetToDo", new { id = item.Id }, item);
         }
 
+        // implement PUT /api/todo/{id}
         [HttpPut("{id}")]
         public IActionResult Update(long id, ToDoItem item)
         {
@@ -71,6 +73,7 @@ namespace ToDoApi.Controllers
             return NoContent();
         }
 
+        // implement DELETE /api/todo/{id}
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
