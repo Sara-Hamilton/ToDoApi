@@ -44,5 +44,15 @@ namespace ToDoApi.Controllers
             }
             return item;
         }
+
+        [HttpPost]
+        public IActionResult Create(ToDoItem item)
+        {
+            _context.ToDoItems.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetToDo", new { id = item.Id }, item);
+        }
+
      }
 }
