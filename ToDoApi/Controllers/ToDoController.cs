@@ -54,5 +54,22 @@ namespace ToDoApi.Controllers
             return CreatedAtRoute("GetToDo", new { id = item.Id }, item);
         }
 
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, ToDoItem item)
+        {
+            var toDo = _context.ToDoItems.Find(id);
+            if (toDo == null)
+            {
+                return NotFound();
+            }
+
+            toDo.IsComplete = item.IsComplete;
+            toDo.Name = item.Name;
+
+            _context.ToDoItems.Update(toDo);
+            _context.SaveChanges();
+            return NoContent();
+        }
+
      }
 }
