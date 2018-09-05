@@ -19,8 +19,8 @@ namespace ToDoApi.Controllers
 
             if (_context.ToDoItems.Count() == 0)
             {
-                //Create a new ToDoItem if collection is empty,
-                //Which means you can't delete all ToDoItems.
+                // Create a new ToDoItem if collection is empty,
+                // Which means you can't delete all ToDoItems.
                 _context.ToDoItems.Add(new ToDoItem { Name = "Item1" });
                 _context.SaveChanges();
             }
