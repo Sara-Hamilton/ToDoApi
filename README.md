@@ -8,7 +8,7 @@ This is a basic to do list API built with Visual Studio 17, C#, and .NET Core 2.
 This to do list API was built following the tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#get-to-do-items
 
 ## Functionality
-This is a basic To Do List that can be accessed and viewed as an API or as a web app.  The app can only be run and viewed locally.  The intent is to deploy the API using Azure in the future so that it can be accessed by anyone.  
+This is a basic To Do List that can be accessed and viewed as an API or as a web app.  The app can only be run and viewed locally.  The intent is to deploy the API using Azure in the future so that it can be accessed by anyone.
 
 ### Model
 * ToDoItem
@@ -43,7 +43,7 @@ This is a basic To Do List that can be accessed and viewed as an API or as a web
 * _View the program in JSON format at https://localhost:44350/api/todo (your port may be different - view Visual Studio logs to determine correct ports)_
 
 * _Edit the todo list using GET, POST, PUT, and DELETE requests with postman_
-  * see https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#get-to-do-items for details.
+  * see https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#use-postman-to-send-a-create-request for details.
 
 * _View the program in JavaScript at http://localhost:51866 (your port may be different - view Visual Studio logs to determine correct ports)_
 
