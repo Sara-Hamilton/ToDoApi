@@ -1,6 +1,6 @@
 # ToDo API
 
-##### basic to do list API built with Visual Studio 17, C#, and .NET Core 2.1  09/2004/18
+This is a basic to do list API built with Visual Studio 17, C#, and .NET Core 2.1 on 09/04/18
 
 ## By Sara Hamilton
 
@@ -8,12 +8,13 @@
 This to do list API was built following the tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#get-to-do-items
 
 ## Functionality
+This is a basic To Do List that can be accessed and viewed as an API or as a web app.  The app can only be run and viewed locally.  The intent is to deploy the API using Azure in the future so that it can be accessed by anyone.  
 
 ### Model
-  * ToDoItem
-    * Id
-    * Name
-    * IsComplete
+* ToDoItem
+  * Id
+  * Name
+  * IsComplete
 
 ## Technologies Used
 * HTML
@@ -22,57 +23,30 @@ This to do list API was built following the tutorial at https://docs.microsoft.c
 * C#
 * .NET Core 2.1
 
-
 ## Prerequisites
 
-* Visual Studio 2017 version 15.7.3 or later with the following workloads:  
-	* ASP.NET and web development https://www.microsoft.com/net/download  
+* Visual Studio 2017 version 15.7.3 or later with the following workloads:
+	* ASP.NET and web development https://www.microsoft.com/net/download
 	* .NET Core cross-platform development
-* .NET Core 2.1 SDK or later https://www.microsoft.com/net/download  
+* .NET Core 2.1 SDK or later https://www.microsoft.com/net/download
 
 ## Run the Application
 
-  * _Clone the github respository_
+* _Clone the github repository_
   ```
   $ git clone https://github.com/Sara-Hamilton/ToDoApi
   ```
+* _Open the project solution in Visual Studio_
 
-* _Move into the directory_
-```
-$ cd GummiBears
-```
-*  _Restore the program_
+* _Press ctrl + F5 to run the program_
 
- ```
- $ dotnet restore
- ```
-* _Move one layer deeper into the directory_
-```
-$ cd GummiBears
-```
-*  _Setup the database_
+* _View the program in JSON format at https://localhost:44350/api/todo (your port may be different - view Visual Studio logs to determine correct ports)_
 
- ```
- $ dotnet ef database update --context GummiDbContext
-```
-*  _Run the program_
-```
-$ dotnet run
-```
-## Testing
+* _Edit the todo list using GET, POST, PUT, and DELETE requests with postman_
+  * see https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#get-to-do-items for details.
 
-* _Move two layers into the directory_
-```
-$ cd GummiBears/GummiBears
-```
-*  _Setup the testing database_
+* _View the program in JavaScript at http://localhost:51866 (your port may be different - view Visual Studio logs to determine correct ports)_
 
- ```
- $ dotnet ef database update --context TestDbContext
-```
-* _Open project solution in Visual Studio_
-
-*  _Run the tests_
 
 ### License
 
