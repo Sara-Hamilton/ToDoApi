@@ -45,7 +45,7 @@ This is a basic To Do List that can be accessed and viewed as an API or as a web
 * _Edit the todo list using GET, POST, PUT, and DELETE requests with postman_
   * see https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#use-postman-to-send-a-create-request for details.
 
-* _View the program in JavaScript at http://localhost:51866 (your port may be different - view Visual Studio logs to determine correct ports)_
+* _View the program in JavaScript at https://localhost:44350 (your port may be different - view Visual Studio logs to determine correct ports)_
 
 
 ### License
