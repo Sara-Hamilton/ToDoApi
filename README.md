@@ -47,11 +47,13 @@ This is a basic To Do List with CRUD functionaloity that can be accessed and vie
 
 * _View the program in JavaScript at https://localhost:44350 (your port may be different - view Visual Studio logs to determine correct ports)_
 
+* _View the program in Swagger at https://localhost:44350/swagger (your port may be different - view Visual Studio logs to determine correct ports)_
+
+
 
 ### License
 
 *MIT License*
-
 Copyright (c) 2018 **_Sara Hamilton_**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
