@@ -4,6 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ToDoApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.Reflection;
+using System.IO;
 
 namespace ToDoApi
 {
