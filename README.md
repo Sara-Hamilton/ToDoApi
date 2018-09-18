@@ -7,8 +7,10 @@ This is a basic to do list API built with Visual Studio 17, C#, and .NET Core 2.
 # Description
 This to do list API was built following the tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1#get-to-do-items
 
+Swagger and the Swagger UI were added by following the tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.1&tabs=visual-studio%2Cvisual-studio-xml
+
 ## Functionality
-This is a basic To Do List with CRUD functionaloity that can be accessed and viewed as an API or as a web app.  The app can only be run and viewed locally.  The intent is to deploy the API using Azure in the future so that it can be accessed by anyone.
+This is a basic To Do List with CRUD functionality that can be accessed and viewed as an API or as a web app.  The app can only be run and viewed locally.  The intent is to deploy the API using Azure in the future so that it can be accessed by anyone.
 
 ### Model
 * ToDoItem
@@ -48,6 +50,8 @@ This is a basic To Do List with CRUD functionaloity that can be accessed and vie
 * _View the program in JavaScript at https://localhost:44350 (your port may be different - view Visual Studio logs to determine correct ports)_
 
 * _View the program in Swagger at https://localhost:44350/swagger (your port may be different - view Visual Studio logs to determine correct ports)_
+
+* _View the program in the Swagger UI at https://localhost:44350/swagger/ui  type  https://localhost:44350/swagger/v1/swagger.json into the header's textbox and click the explore button.  (your port may be different - view Visual Studio logs to determine correct ports)_
 
 
 
